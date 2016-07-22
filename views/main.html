@@ -1,0 +1,33 @@
+Hello World!
+
+{{maVariable}}
+<br />
+<input type="text" ng-model="maVariable" />
+<button type="button" ng-click="maFonction()">Click!</button>
+
+<hr/>
+
+<p style="color: red">{{ message }}</p>
+
+<table>
+
+    <tr>
+        <th>Nom</th>
+        <th>N° Téléphone</th>
+    </tr>
+
+    <tr ng-repeat="contact in contacts">
+        <td>{{contact.nom}}</td>
+        <td>{{contact.tel}}</td>
+        <td><button type="button" ng-click="supprimer($index)">Supprimer</button></td>
+    </tr>
+
+    <tr>
+        <td><input type="text" ng-model="nom" /></td>
+        <td><input type="text" ng-model="numTel" /></td>
+    </tr>
+
+</table>
+
+<button type="button" ng-click="enregistrer()">Enregistrer</button>
+
